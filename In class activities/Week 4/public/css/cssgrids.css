@@ -1,0 +1,148 @@
+/* --------------------- --------------------- */
+/* MAIN GRID */
+/* --------------------- --------------------- */
+#maingrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  transition: grid-template-columns 350ms ease;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 1em;
+  grid-template-areas:
+    "body-navbar"
+    "body-main";
+  height: 100vh;
+}
+
+#submaingrid {
+  display: grid;
+  grid-area: body-main;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-row-gap: 1em;
+  grid-template-areas:
+    "body-banner"
+    "body-content"
+    "body-footer";
+  background: url("/public/img/dripdown4.png");
+  background-position-x: 50%;
+  background-repeat: repeat-y;
+  background-size: 200px;
+  animation: animate_background 8s linear 0s infinite;
+}
+
+/* --------------------- --------------------- */
+/* SUBGRID DESKTOP*/
+/* --------------------- --------------------- */
+@media only screen and (min-width: 481px) {
+  #subgrid {
+    display: grid;
+    grid-area: body-content;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 1em;
+    grid-template-rows: auto;
+    grid-template-areas: "sg-middle sg-right";
+    margin: 0px 1em;
+  }
+}
+
+/* --------------------- --------------------- */
+/* SUBGRID MOBILE */
+/* --------------------- --------------------- */
+@media only screen and (max-width: 480px) {
+  #subgrid {
+    display: grid;
+    grid-area: body-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 1em;
+    grid-template-areas:
+      "sg-middle"
+      "sg-right";
+    margin: 0px 1em;
+  }
+}
+
+/* --------------------- --------------------- */
+/* GRID ITEMS */
+/* --------------------- --------------------- */
+
+nav {
+  display: grid;
+  grid-area: body-navbar;
+  justify-content: center;
+  grid-template-rows: auto;
+  grid-column-gap: 1em;
+  grid-template-columns: repeat(6, auto);
+  grid-template-areas: "nav1 nav2 nav3 nav4 nav5 nav6";
+}
+
+#navhome {
+  display: grid;
+  grid-area: nav1;
+}
+
+#navgit {
+  display: grid;
+  grid-area: nav2;
+}
+
+#navlinkd {
+  display: grid;
+  grid-area: nav3;
+}
+
+#navcontact {
+  display: grid;
+  grid-area: nav4;
+}
+
+#navlogin {
+  display: grid;
+  grid-area: nav5;
+}
+
+#open-menu {
+  display: grid;
+  grid-area: nav6;
+}
+
+/* --------------------- --------------------- */
+
+figure {
+  display: grid;
+  grid-area: body-banner;
+}
+
+/* --------------------- --------------------- */
+/*
+#side-left {
+  display: grid;
+  grid-area: sg-left;
+  padding: 1em;
+}
+*/
+/* --------------------- --------------------- */
+
+main {
+  display: grid;
+  grid-area: sg-middle;
+  user-select: text;
+  padding: 1em;
+}
+
+/* --------------------- --------------------- */
+
+#side-right {
+  display: grid;
+  grid-area: sg-right;
+  padding: 1em;
+}
+
+/* --------------------- --------------------- */
+
+footer {
+  display: grid;
+  grid-area: body-footer;
+  justify-self: center;
+  margin-bottom: 1em;
+}
