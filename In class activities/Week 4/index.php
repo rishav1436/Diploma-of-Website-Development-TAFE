@@ -10,7 +10,7 @@ require(ROOT . "app/view/template/header.php");
     <article>
         <h2>Welcome.</h2>
 
-        <div class="SampleFormBox">
+        <div class="sampleFormBox">
             <form action="controller/processCatDelete.php" method="POST">
                 <fieldset>
                     <legend>Update Category</legend>
