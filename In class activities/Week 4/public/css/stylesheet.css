@@ -53,6 +53,7 @@ h3 {
 nav {
   background-color: var(--surface2);
   color: var(--element1);
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 figure {
@@ -136,4 +137,9 @@ nav h2 {
   to {
     background-position-y: 0;
   }
+}
+
+
+.sampleFormBox {
+  width: max-content;
 }
