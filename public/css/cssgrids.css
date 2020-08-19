@@ -66,44 +66,12 @@
 /* GRID ITEMS */
 /* --------------------- --------------------- */
 
-nav {
+.nav-menu > ul {
   display: grid;
   grid-area: body-navbar;
-  justify-content: center;
-  grid-template-rows: auto;
+  justify-content: left;
+  grid-template-columns: repeat(8, auto);
   grid-column-gap: 1em;
-  grid-template-columns: repeat(6, auto);
-  grid-template-areas: "nav1 nav2 nav3 nav4 nav5 nav6";
-}
-
-#navhome {
-  display: grid;
-  grid-area: nav1;
-}
-
-#navgit {
-  display: grid;
-  grid-area: nav2;
-}
-
-#navlinkd {
-  display: grid;
-  grid-area: nav3;
-}
-
-#navcontact {
-  display: grid;
-  grid-area: nav4;
-}
-
-#navlogin {
-  display: grid;
-  grid-area: nav5;
-}
-
-#open-menu {
-  display: grid;
-  grid-area: nav6;
 }
 
 /* --------------------- --------------------- */

@@ -17,9 +17,9 @@ if (!empty($_COOKIE['theme'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Harris Fauntleroys personal website.">
     <title>Harris Fauntleroy</title>
-    <link rel="stylesheet" type="text/css" href="/public/css/stylesheet.css?v=18">
+    <link rel="stylesheet" type="text/css" href="/public/css/stylesheet.css?v=19">
     <link rel="stylesheet" type="text/css" href="/public/css/theme.css?v=1">
-    <link rel="stylesheet" type="text/css" href="/public/css/cssgrids.css?v=18">
+    <link rel="stylesheet" type="text/css" href="/public/css/cssgrids.css?v=19">
     <link rel="stylesheet" type="text/css" href="/public/css/font-awesome-4.7.0/css/font-awesome.css">
 </head>
 

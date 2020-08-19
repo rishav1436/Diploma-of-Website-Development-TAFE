@@ -95,35 +95,104 @@ footer > p {
   background-color: rgba(var(--blackbox), 0.8);
 }
 
-/* -------------------------------------------------------------------------------------- */
-/* Navigation */
-/* -------------------------------------------------------------------------------------- */
+/* New nav */
+.nav-menu {
+  justify-content: left;
+}
+
+.nav-menu > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  color: var(--element2);
+}
 
 nav a {
-  text-align: center;
-  height: auto;
-  padding: 10px 1em;
-  color: var(--element1);
+  color: var(--element2);
   text-decoration: none;
 }
 
-nav a i {
-  transition: transform 250ms ease;
-}
-
-nav a:hover i,
-nav a:focus i {
+i:hover {
   transition: transform 250ms ease;
   transform: scale(1.5);
 }
 
-nav a:active {
+i,
+i:active {
   transition: transform 250ms ease;
-  transform: scale(0.9);
+  transform: scale(1);
 }
 
-nav h2 {
-  padding-left: 0.5em;
+.dropdown-btn {
+  position: relative;
+}
+
+/* Hide dropdown content by default */
+li > .dropdown-content {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: max-content;
+  list-style-type: none;
+  padding: 0;
+  line-height: 2em;
+}
+
+/* Show dropdown content on hover */
+li:hover > .dropdown-content {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  background: var(--surface3);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--surface2);
+}
+
+#hamburger {
+  display: none;
+}
+
+@media only screen and (min-width: 481px) {
+  .nav-menu > ul {
+    display: grid;
+    grid-area: body-navbar;
+    justify-content: left;
+    grid-template-columns: repeat(8, auto);
+    grid-column-gap: 1em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav-menu > ul {
+    display: grid;
+    grid-area: body-navbar;
+    grid-template-columns: repeat(8, auto);
+  }
+  #navhome {
+    display: none;
+  }
+  #navgit {
+    display: none;
+  }
+  #navlinkd {
+    display: none;
+  }
+  #navcontact {
+    display: none;
+  }
+  .dropdown-btn {
+    display: none;
+  }
+  
+  #hamburger {
+    display: grid;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+  }
 }
 
 /* -------------------------------------------------------------------------------------- */
@@ -138,7 +207,6 @@ nav h2 {
     background-position-y: 0;
   }
 }
-
 
 .sampleFormBox {
   width: max-content;
