@@ -15,8 +15,8 @@ if (!empty($_COOKIE['theme'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Harris Fauntleroys personal website.">
-    <title>Harris Fauntleroy</title>
+    <meta name="description" content="ICT5065">
+    <title>ICT5065</title>
     <link rel="stylesheet" type="text/css" href="/public/css/stylesheet.css?v=19">
     <link rel="stylesheet" type="text/css" href="/public/css/theme.css?v=1">
     <link rel="stylesheet" type="text/css" href="/public/css/cssgrids.css?v=19">
